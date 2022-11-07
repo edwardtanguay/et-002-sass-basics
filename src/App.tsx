@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/App.scss';
 
 function App() {
 	return (
@@ -9,7 +9,9 @@ function App() {
 			<p>ksjdfksdjflsdfj sdkfj sdkj sdkfjd f</p>
 			<h3>More Info</h3>
 			<p>ksjdfksdjflsdfj sdkfj sdkj sdkfjd f</p>
-			
+			<section className="content">
+				<p>This is a message in the content.</p>	
+			</section>		
 		</div>
 	);
 }

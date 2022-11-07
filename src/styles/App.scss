@@ -1,0 +1,34 @@
+@use "variables" as var;
+
+div.App {
+	background-color: #333;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 0 1rem;
+
+	p {
+		color: var.$main-font-color;
+	}
+
+	h1 {
+		color: var.$headerColor;
+		margin-top: var.$headerTopMargin;
+	}
+
+	h2 {
+		color: var.$headerColor;
+		margin-top: var.$headerTopMargin;
+	}
+
+	h3 {
+		$headerColor: rgb(172, 123, 33);
+		color: var.$headerColor;
+		margin-top: var.$headerTopMargin;
+	}
+
+	.content {
+		p {
+			color: red;
+		}
+	}
+}
