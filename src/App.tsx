@@ -15,6 +15,7 @@ function App() {
 				<button className="primary">Primary</button>
 				<button className="secondary">Secondary</button>
 				<button className="warning">Warning</button>
+				<button className="error">Error</button>
 			</section>		
 		</div>
 	);
