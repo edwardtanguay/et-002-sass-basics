@@ -8,15 +8,18 @@ body {
 	padding: 0 1rem;
 
 	h1 {
-		color:$headerColor;
+		color: $headerColor;
 		margin-top: $headerTopMargin;
 	}
+
 	h2 {
-		color:$headerColor;
+		color: $headerColor;
 		margin-top: $headerTopMargin;
 	}
+
 	h3 {
-		color:$headerColor;
+		$headerColor: rgb(172, 123, 33);
+		color: $headerColor;
 		margin-top: $headerTopMargin;
 	}
 }
