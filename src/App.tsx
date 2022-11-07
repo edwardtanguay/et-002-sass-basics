@@ -16,7 +16,8 @@ function App() {
 				<button className="secondary">Secondary</button>
 				<button className="warning">Warning</button>
 				<button className="error">Error</button>
-			</section>		
+				<button className="error-disabled">Error</button>
+			</section>
 		</div>
 	);
 }
