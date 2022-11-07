@@ -55,25 +55,18 @@ div.App {
 
 		$buttons: primary lightblue, secondary lightgreen, warning orange, error tomato, info purple;
 
-		@each $name, $bgcolor in $buttons {
+		@each $name,
+		$bgcolor in $buttons {
 			@include makeButton($name, $bgcolor);
 		}
 
-		// @include makeButton(primary, lightblue);
-		// @include makeButton(secondary, lightgreen);
-		// @include makeButton(warning, orange);
-		// @include makeButton(error, tomato);
+	}
 
-		// button.secondary {
-		// 	@include btn(lightgreen);
-		// }
+	$hsizes: 4rem, 3.8rem, 3rem, 2.5rem, 2rem, 1.5rem;
 
-		// button.warning {
-		// 	@include btn(orange);
-		// }
-
-		// button.error {
-		// 	@include btn(tomato, red);
-		// }
+	@for $i from 1 through length($hsizes) {
+		h#{$i}.special {
+			font-size: nth($hsizes, $i);
+		}
 	}
 }
