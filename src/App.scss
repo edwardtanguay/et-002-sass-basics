@@ -1,11 +1,15 @@
 $headerColor: orange;
 $headerTopMargin: 1rem;
+$main-font-color: yellow;
 
 body {
 	background-color: #333;
 	color: #ccc;
 	font-family: sans-serif;
 	padding: 0 1rem;
+	p {
+		color: $main-font-color;
+	}
 
 	h1 {
 		color: $headerColor;
