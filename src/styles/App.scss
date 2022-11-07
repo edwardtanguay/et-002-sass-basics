@@ -53,10 +53,16 @@ div.App {
 			margin-right: 1rem;
 		}
 
-		@include makeButton(primary, lightblue);
-		@include makeButton(secondary, lightgreen);
-		@include makeButton(warning, orange);
-		@include makeButton(error, tomato);
+		$buttons: primary lightblue, secondary lightgreen, warning orange, error tomato, info purple;
+
+		@each $name, $bgcolor in $buttons {
+			@include makeButton($name, $bgcolor);
+		}
+
+		// @include makeButton(primary, lightblue);
+		// @include makeButton(secondary, lightgreen);
+		// @include makeButton(warning, orange);
+		// @include makeButton(error, tomato);
 
 		// button.secondary {
 		// 	@include btn(lightgreen);
