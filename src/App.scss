@@ -1,3 +1,6 @@
+$headerColor: orange;
+$headerTopMargin: 1rem;
+
 body {
 	background-color: #333;
 	color: #ccc;
@@ -5,6 +8,15 @@ body {
 	padding: 0 1rem;
 
 	h1 {
-		color: rgb(209, 168, 85);
+		color:$headerColor;
+		margin-top: $headerTopMargin;
+	}
+	h2 {
+		color:$headerColor;
+		margin-top: $headerTopMargin;
+	}
+	h3 {
+		color:$headerColor;
+		margin-top: $headerTopMargin;
 	}
 }
