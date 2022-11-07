@@ -63,10 +63,19 @@ div.App {
 	}
 
 	$hsizes: 4rem, 3.8rem, 3rem, 2.5rem, 2rem, 1.5rem;
+	$wrapped: nowrap, wrap, nowrap, wrap, nowrap, nowrap;
 
 	@for $i from 1 through length($hsizes) {
 		h#{$i}.special {
 			font-size: nth($hsizes, $i);
+			@if nth($wrapped, $i) == 'wrap' {
+				&:before {
+					content: '(';
+				}
+				&:after {
+					content: ')';
+				}
+			}
 		}
 	}
 }
