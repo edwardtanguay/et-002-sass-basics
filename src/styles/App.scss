@@ -31,5 +31,22 @@ div.App {
 		p {
 			color: $warning-color;
 		}
+
+		button.primary {
+			background-color: lightblue;
+		}
+
+		button.secondary {
+			background-color: lightgreen;
+		}
+
+		button.warning {
+			background-color: orange;
+		}
+
+		button {
+			margin-right: 1rem;
+			font-size: 1.5rem;
+		}
 	}
 }
