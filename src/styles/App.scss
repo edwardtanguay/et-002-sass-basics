@@ -32,21 +32,22 @@ div.App {
 			color: $warning-color;
 		}
 
+		@mixin btn($bgcolor) {
+			margin-right: 1rem;
+			font-size: 1.5rem;
+			background-color: $bgcolor;
+		}
+
 		button.primary {
-			background-color: lightblue;
+			@include btn(lightblue);
 		}
 
 		button.secondary {
-			background-color: lightgreen;
+			@include btn(lightgreen);
 		}
 
 		button.warning {
-			background-color: orange;
-		}
-
-		button {
-			margin-right: 1rem;
-			font-size: 1.5rem;
+			@include btn(orange);
 		}
 	}
 }
