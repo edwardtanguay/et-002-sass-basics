@@ -1,3 +1,4 @@
+// @use "variables_conservative" as *;
 @use "variables" as *;
 
 div.App {
@@ -28,7 +29,7 @@ div.App {
 
 	.content {
 		p {
-			color: red;
+			color: $warning-color;
 		}
 	}
 }
