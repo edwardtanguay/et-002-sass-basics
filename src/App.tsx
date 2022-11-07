@@ -3,6 +3,7 @@ import './styles/App.scss';
 
 function App() {
 	const [isDisabled, setIsDisabled] = useState(false);
+	const [showAsError, setShowAsError] = useState(false);
 
 	// const handleToggleDisabled = () => {
 	// 	setIsDisabled(!isDisabled);
@@ -21,7 +22,7 @@ function App() {
 			<h2>Detailed Info</h2>
 			<p>ksjdfksdjflsdfj sdkfj sdkj sdkfjd f</p>
 			<h3>More Info</h3>
-			<p>ksjdfksdjflsdfj sdkfj sdkj sdkfjd f</p>
+			<p style={{backgroundColor: showAsError ? "tomato" : '', color: showAsError ? 'red' : 'white'}}>ksjdfksdjflsdfj sdkfj sdkj sdkfjd f</p>
 			<section className="content">
 				<p>This is a message in the content.</p>
 				<hr />
@@ -29,6 +30,7 @@ function App() {
 				<button onClick={() => setIsDisabled(!isDisabled)}>
 					Toggle Disabled
 				</button>
+				<button onClick={() => setShowAsError(!showAsError)}>Show as Error</button>
 				<hr />
 				<button className={!isDisabled ? 'primary' : 'primary primary-disabled'}>Primary</button>
 				{/* <button className={`primary primary-disabled`}>Primary</button> */}
