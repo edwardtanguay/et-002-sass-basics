@@ -1,4 +1,4 @@
-@use "variables" as var;
+@use "variables" as *;
 
 div.App {
 	background-color: #333;
@@ -7,23 +7,23 @@ div.App {
 	padding: 0 1rem;
 
 	p {
-		color: var.$main-font-color;
+		color: $main-font-color;
 	}
 
 	h1 {
-		color: var.$headerColor;
-		margin-top: var.$headerTopMargin;
+		color: $headerColor;
+		margin-top: $headerTopMargin;
 	}
 
 	h2 {
-		color: var.$headerColor;
-		margin-top: var.$headerTopMargin;
+		color: $headerColor;
+		margin-top: $headerTopMargin;
 	}
 
 	h3 {
 		$headerColor: rgb(172, 123, 33);
-		color: var.$headerColor;
-		margin-top: var.$headerTopMargin;
+		color: $headerColor;
+		margin-top: $headerTopMargin;
 	}
 
 	.content {
